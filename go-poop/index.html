@@ -1,0 +1,110 @@
+---
+layout: policy
+app: Go Poop
+tagline: a bowel movement tracker for iPhone and Apple Watch
+platforms: iPhone and Apple Watch
+effective: "[EFFECTIVE DATE]"
+---
+
+<p class="lede"><strong>Go Poop does not collect your data.</strong> Everything you record stays
+on your own devices and in your own iCloud account. We cannot see it, and we never send it
+anywhere else. There is no analytics, no advertising, and no tracking in this app.</p>
+
+<p>This policy explains that in full, and tells you exactly what happens to the information
+you enter. It applies to the Go Poop app for iPhone and Apple Watch, including its
+Apple Watch complication.</p>
+
+<h2>Who we are</h2>
+
+<p>Go Poop is published by {{ site.publisher }}, an independent developer.
+You can reach us at {{ site.contact_email }}.</p>
+
+<h2>What information the app handles</h2>
+
+<p>Go Poop is a bowel movement tracker. When you use it, you may create records containing:</p>
+
+<ul>
+  <li>The date and time of a bowel movement</li>
+  <li>A stool consistency rating on the Bristol Stool Scale (1&ndash;7), if you choose to enter one</li>
+  <li>An optional short note that you type yourself</li>
+  <li>Which device the record was made on (iPhone, Apple Watch, or a notification action)</li>
+</ul>
+
+<p>You may also change settings such as your reminder threshold and reminder time.</p>
+
+<p>That is the complete list. The app does not ask for your name, email address, phone number,
+date of birth, location, contacts, photos, or any other personal information.</p>
+
+<h2>Where that information is stored</h2>
+
+<h3>On your device</h3>
+
+<p>Your records are stored in a database on your iPhone and Apple Watch. This database is inside
+the app's private storage area, which other apps cannot read.</p>
+
+<h3>In your iCloud account</h3>
+
+<p>So that your iPhone and Apple Watch show the same records, Go Poop syncs them through
+<strong>Apple's CloudKit private database</strong> &mdash; your own personal iCloud storage.</p>
+
+<p>This is important, so we want to be precise about it:</p>
+
+<ul>
+  <li>The data is stored in <strong>your</strong> iCloud account, not on our servers.
+      We do not operate any server for this app.</li>
+  <li>A CloudKit <em>private</em> database is only accessible to the iCloud account that owns it.
+      <strong>We cannot read it.</strong> Not through the app, not through Apple's developer tools,
+      not by any other means available to us.</li>
+  <li>If you are not signed in to iCloud, the app simply stores everything locally on the device
+      and does not sync. It keeps working.</li>
+  <li>Your use of iCloud is governed by
+      <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+</ul>
+
+<h3>Shared with the Apple Watch complication</h3>
+
+<p>If you add the Go Poop complication to your watch face, the app writes a small amount of
+information to a shared storage area on your own device so the complication can display it:
+the date of your most recent record, the date you first launched the app, and your reminder
+threshold setting.</p>
+
+<p><strong>The contents of your records &mdash; the stool ratings and your notes &mdash;
+are never written there.</strong> The complication only needs to show a number of days.</p>
+
+{% include no-collection.html %}
+
+<h2>Notifications</h2>
+
+<p>If you turn on reminders and grant notification permission, Go Poop schedules
+<strong>local notifications</strong> on your device. These are created and delivered entirely
+by your iPhone. Nothing is sent to us or to a push server we control, and the content of your
+records is not included in them.</p>
+
+<p>The app also uses Apple's silent push mechanism, which is what allows CloudKit to tell your
+devices that something changed on another device. These silent messages carry no content of
+yours and produce no visible alert.</p>
+
+<p>You can turn reminders off at any time in the app's Settings screen, or revoke notification
+permission entirely in iOS Settings.</p>
+
+{% include apple-analytics.html %}
+
+<h2>How to delete your data</h2>
+
+<p>You are in control of everything the app holds.</p>
+
+<ul>
+  <li><strong>Delete a single record</strong> &mdash; open it in the app and choose Delete.</li>
+  <li><strong>Delete everything</strong> &mdash; Settings &rsaquo; <code>Delete all data</code>.
+      This removes your records from the device and from your iCloud, on every device signed
+      in to the same account.</li>
+  <li><strong>Delete the app</strong> &mdash; removing Go Poop deletes the local database.
+      To remove the iCloud copy as well, use <code>Delete all data</code> before uninstalling,
+      or delete the app's data from
+      <code>Settings &rsaquo; [your name] &rsaquo; iCloud &rsaquo; Manage Account Storage</code>.</li>
+</ul>
+
+<p>Because we never hold your data, there is nothing for you to request from us and nothing for
+us to delete on your behalf. Deletion is immediate and entirely in your hands.</p>
+
+{% include health-disclaimer.html %}

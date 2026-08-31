@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — {{ page.app }}</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="meta">{{ page.app }}{% if page.platforms %} for {{ page.platforms }}{% endif %}<br>
+Effective date: {{ page.effective }} · Last updated: {{ page.updated | default: page.effective }}</p>
+
+{{ content }}
+
+{% include rights.html %}
+{% include children.html %}
+{% include security.html %}
+{% include changes.html %}
+{% include contact.html %}
+
+<footer>
+  {{ page.app }}{% if page.tagline %} &mdash; {{ page.tagline }}{% endif %}<br>
+  <a href="{{ site.baseurl }}/">All privacy policies</a>
+</footer>
+
+</main>
+</body>
+</html>

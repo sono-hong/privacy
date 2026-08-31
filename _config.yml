@@ -1,0 +1,16 @@
+# サイト全体の設定。ここを直せば全アプリのポリシーに反映される。
+title: Privacy Policies
+description: Privacy policies for our iOS and watchOS apps.
+
+# ── 連絡先 ───────────────────────────────────────────────
+# 変更するのはここだけ。全ページが参照する。
+publisher: "[TRADE NAME]"
+contact_email: "[CONTACT EMAIL]"
+
+# GitHub Pages でサブディレクトリ配信するための設定。
+# リポジトリ名を変えたらここも変えること。
+baseurl: "/privacy"
+
+# 出力に含めないもの
+exclude:
+  - README.md
