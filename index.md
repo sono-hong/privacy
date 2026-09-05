@@ -10,3 +10,5 @@ Each app has its own policy, because each app handles information differently.
     <span>A bowel movement tracker for iPhone and Apple Watch</span>
   </li>
 </ul>
+
+<p><a href="{{ site.baseurl }}/support/">Support</a></p>
