@@ -4,8 +4,8 @@ description: Privacy policies for our iOS and watchOS apps.
 
 # ── 連絡先 ───────────────────────────────────────────────
 # 変更するのはここだけ。全ページが参照する。
-publisher: "[TRADE NAME]"
-contact_email: "[CONTACT EMAIL]"
+publisher: "Apricobot"
+contact_email: "apricobot@gmail.com"
 
 # GitHub Pages でサブディレクトリ配信するための設定。
 # リポジトリ名を変えたらここも変えること。
